@@ -1,0 +1,265 @@
+/* Box Model Hack */
+* {
+     box-sizing: border-box;
+     -moz-box-sizing: border-box; /* Firexfox */
+     -webkit-box-sizing: border-box; /* Safari/Chrome/iOS/Android */
+     box-sizing: border-box; /* IE */
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+	clear: both;
+}
+/*************************
+Header
+*************************/
+body{
+  background-color: #d8dfea;
+}
+header nav{
+}
+header ul{
+ list-style: none;
+ margin:0 5%;
+}
+header li{
+  background-color:white;
+  padding: 10px 40px;
+  float: left;
+}
+header a{
+ color: grey;
+ text-decoration: none;
+}
+.grey{
+  background-color: #1D1F1F;
+}
+.whiteAnchor{
+  color: white;
+}
+/*************************
+Left Header
+*************************/
+.leftHeader{
+  float: left;
+  padding-top: 5%;
+  width: 60%;
+}
+.leftHeader img{
+  margin: 0 40%;
+  width: 30%;
+}
+.leftHeader h2{
+   margin-left: 15%;
+   font-size: 200%;
+}
+.leftHeader h2+p{
+  margin-left: 15%;
+}
+.leftHeader p+p{
+  margin-left: 15%;
+}
+.leftHeader form{
+  margin-left: 15%;
+}
+input[type=text]{
+  padding: 10px 200px 10px 15px;
+  margin-right: 15px;
+}
+input[type=submit]{
+  background-color: #afbdd4;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 40px;
+  color: white;
+}
+/************************
+Right Header
+*************************/
+.rightHeader{
+  float: left;
+  padding-top: 5%;
+  width: 40%;
+}
+.rightHeader img{
+  width: 80%;
+}
+.jwliWhiteSection{
+  background-color: white;
+}
+.jwliWhiteSection h2{
+  margin: 0 10%;
+  padding:2% 0 5% 0;
+}
+.floatLeftP{
+  float: left;
+  margin-left: 10%;
+  width: 40%;
+}
+.jwliWhiteSection span{
+  font-weight: bold;
+}
+.floatRightP{
+  float: left;
+  margin-right: 10%;
+  width: 40%;
+}
+.clearP{
+  padding-top: 5%;
+  margin: 0 15%;
+}
+/************************
+Our History
+************************/
+.ourHistory{
+  background-color:#d8dfea;
+}
+.leftHistory{
+  float: left;
+  width: 50%;
+}
+.leftHistory h2{
+  padding-left: 5%;
+}
+.leftHistory p{
+  padding-left: 5%;
+  padding-right: 5%;
+}
+.rightHistory{
+  float: left;
+  width: 50%;
+}
+.rightHistory img{
+  margin-left: 15%;
+  margin-bottom: 1%;
+  margin-top: 5%;
+  width: 50%;
+}
+/********************
+Who We Are
+********************/
+.whoWeAre{
+  background-color: white;
+  padding-top: 5%;
+}
+.whoWeAreImg{
+  float: left;
+  width: 20%;
+}
+.whoWeAreImg img{
+  height: 200px;
+  margin-left: 20%;
+}
+.subWhoWeAre{
+  float: left;
+  width: 80%;
+}
+.subWhoWeAre h3,p{
+  padding-left: 3%;
+}
+.fa-barsLi{
+  display: none;
+}
+/*********************
+Bottom Floats
+*********************/
+.bottomFloatLeft{
+  width: 50%;
+  float: left;
+}
+.bottomFloatRight{
+  width: 50%;
+  float: left;
+}
+.fa-bars{
+  display: none;
+}
+@media only screen and (max-width:375px){
+
+ header nav, .leftHeader p:nth-child(4), .rightHeader img{
+   display: none;
+ }
+
+.fa-bars{
+  display: block;
+  margin-left: 25%;
+ }
+ .leftHeader img{
+   width: 100%;
+ }
+ .leftHeader h2{
+   font-size: 150%;
+ }
+ input[type=text]{
+   padding: 10px 40px;
+ }
+ input[type=submit]{
+   padding: 10px 106px;
+ }
+ .jwliWhiteSection{
+   float: none;
+ }
+ .jwliWhiteSection h2{
+   font-size: 100%;
+   padding: 1%;
+   padding-bottom: 5%;
+   padding-top: 5%;
+   margin: 0;
+ }
+ .jwliWhiteSection p{
+   display: block;
+   padding-bottom: 5%;
+   width: 100%;
+   margin: 0;
+ }
+ .leftHistory{
+   float: none;
+   width: 100%;
+ }
+ .leftHistory p{
+   line-height: 150%;
+ }
+ .rightHistory img{
+   display: none;
+ }
+ .whoWeAre{
+   float: none;
+   width: 100%;
+ }
+ .whoWeAre img{
+   margin: 0;
+   width: 100%;
+ }
+.whoWeAreImg{
+  float: none;
+  width: 95%;
+}
+ .subWhoWeAre{
+   float: none;
+   width: 100%;
+ }
+ .subWhoWeAre p{
+   line-height: 150%;
+ }
+ .bottomFloatLeft{
+   float: none;
+   background-color: #d8dfea;
+   width: 100%;
+   margin: 0;
+   padding: 0;
+ }
+ .bottomFloatRight{
+   background-color: #d8dfea;
+   float: none;
+   width: 100%;
+ }
+}
